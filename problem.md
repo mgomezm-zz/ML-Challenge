@@ -36,40 +36,6 @@ Deliverables:
 
 The expected time to complete the task with a minimal solution is 4 hours, with more complex solutions taking longer.  If you feel limited by time, please describe options you considered that would have taken too long to implement.
 
-------------------------------------------------------------------------------
-
-We can say that an item that is similar to a website with high shares and high page views will get many shares. 
-
-Some possibilites, a link may have:
-
-* large page views and large shares. >>>>
-* small page views and large shares. >>>
-* large page views and small shares. >>
-* small page views and small shares. >
-
-We rank them base on importance in determining whether an item will get shared.
-
-
-
-
-#############################################################################
-
-
-
-
-
-Several (let's say up to three) large CSV files (up to two million rows and up to 255 columns each) all have a shared key.  
-
-Write a program that zips them together.
-
-Inputs are filenames and column indexes of the shared key.  
-
-Output is a single file containing the merged result of all the input files.  
-
-Your program should take into account all CSV conventions; please provide test file(s) as part of the exercise.  
-
-Your program should be a single runtime (i.e. don't use Hadoop, etc.).
-
 
 
 
