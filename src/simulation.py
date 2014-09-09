@@ -24,7 +24,7 @@ def generate_url_actions(urls_attr_prob):
     pi = np.random.dirichlet((c+alpha))
     gamma = pi[-1]
 
-    # how similar is item_i atributes to the other items (proportion)
+    # how similar item_i's atributes are the other items (proportion)
     #urls_attr_prob = np.array([.01, .1, .01, .01, .1])#testing
 
     shares_counts = []
