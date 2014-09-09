@@ -34,8 +34,8 @@ def sim_recommender(id_clicks, id_shares, topics, test_topics, vocab_size, topic
 
     print "".join(['=']*80)
     print "Out of the 10 items in the test.log, the item that should be sent is", map_idx_testitem[best_test_item]
-    print "Its is most similar to item", map_idx_item[most_similar_item]
-    print "With a imilarity of ", corr[best_test_item, most_similar_item]
+    print "It is the most similar to item", map_idx_item[most_similar_item]
+    print "With a similarity of ", corr[best_test_item, most_similar_item]
     print "Number of page views ", clicks[most_similar_item]
     print "Number of shares", shares[most_similar_item]
 
