@@ -28,7 +28,7 @@ def generate_url_actions(urls_attr_prob):
     #urls_attr_prob = np.array([.01, .1, .01, .01, .1])#testing
 
     shares_counts = []
-    for (clck_counts, clck_prob, attr_prob) in zip(click_counts, pi[:-1], urls_attr_prob):
+    for (clck_prob, attr_prob) in zip(pi[:-1], urls_attr_prob):
         share_prob = clck_prob*(1-gamma) + gamma*attr_prob
         shares_counts.append(np.random.binomial(I, share_prob))
     shares_counts = np.array(shares_counts)
