@@ -14,11 +14,11 @@ ML-Challenge
 ---------------------------------------------------------------------------------------------
 ## Simulation
 
-### Item Attributes
+#### Item Attributes
 
 Assuming a finite vocabulary of size 50.  Attributes for a link are chosen by randomly picking 10 items uniformly without replacement.
 
-### Pageviews 
+#### Pageviews 
 
 Let's assume we have a webpage with 5 links. Out of 1000 impressions we can define certain events that might occur. For example, the click counts could be [1, 10, 5, 50, 100] and the number of user leaving would be just 1000 minus the sum of all click counts. That is, c = [1, 10, 5, 50, 100, 834]. 
 
@@ -26,7 +26,7 @@ We can model this using a multinomial distribution, where n = #impressions and t
 
 We will use the conjugate prior of the multinomial distribute, the Dirichlet, on the thetas. After doing some math we get that the posterior ~ Dir(alpha + c), where alpha is the concentration parameter, and c is the link counts vector. We can use this posterior to control share counts.
 
-### Shares
+#### Shares
 
 Simulating share counts is more interesting. We need to consider pageviews and how similar a link is to to other links (similarity matrix on attributes). 
 
